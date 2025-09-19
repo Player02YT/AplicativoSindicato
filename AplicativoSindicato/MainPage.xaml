@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AplicativoSindicato.MainPage">
+
+    <ContentPage.Content>
+        <StackLayout Padding="20" Spacing="10">
+            <Label Text="NOME ASSOCIADO:" TextColor="Black"/>
+            <Border Stroke="Gray" StrokeShape="RoundRectangle 8" Padding="0">
+                <Entry x:Name="txt_nome_associado" Placeholder="Ex: João Carlos..." TextColor="Black"/>
+            </Border>
+
+            <Label Text="CPF ASSOCIADO:" TextColor="Black"/>
+            <Border Stroke="Gray" StrokeShape="RoundRectangle 8" Padding="0">
+                <Entry x:Name="txt_cpf_associado" Placeholder="Ex: 123.456.789-10" TextColor="Black"/>
+            </Border>
+
+            <Label Text="EMAIL ASSOCIADO:" TextColor="Black"/>
+                <Border Stroke="Gray" StrokeShape="RoundRectangle 8" Padding="0">
+                    <Entry x:Name="txt_email_associado" Placeholder="Ex:exemplo1325@gmail.com" TextColor="Black"/>
+            </Border>
+
+            <Label Text="SENHA ASSOCIADO:" TextColor="Black"/>
+                    <Border Stroke="Gray" StrokeShape="RoundRectangle 8" Padding="0">
+                        <Entry x:Name="txt_senha_email_associado" Placeholder="Ex: Exemplo@1325" TextColor="Black"/>
+            </Border>
+
+            <Button Text="PRÓXIMO" Clicked="Button_Clicked" BackgroundColor="Green" TextColor="White"/>
+        </StackLayout>
+    </ContentPage.Content>
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+            <GradientStop Color="White" Offset="0.4" />
+            <GradientStop Color="Green" Offset="1.0"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+</ContentPage>

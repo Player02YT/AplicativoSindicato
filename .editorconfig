@@ -1,0 +1,10 @@
+﻿[*.cs]
+
+# IDE0022: Usar o corpo do bloco para método
+csharp_style_expression_bodied_methods = false
+
+# IDE0021: Usar o corpo do bloco para construtor
+csharp_style_expression_bodied_constructors = when_on_single_line
+
+# IDE0021: Usar o corpo da expressão para construtor
+dotnet_diagnostic.IDE0021.severity = error
